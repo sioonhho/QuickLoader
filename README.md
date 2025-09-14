@@ -50,6 +50,10 @@ Deleting the mod's folder is all you have to do, then the next time you run the 
 
 If a mod's folder contains a file called `.modignore` then that mod will be skipped when building the `data.win`. Currently these have to be created and removed manually, but I *may* have something in the works related to that.
 
+# License
+
+This software is release under the [GPL-3.0 License](https://www.gnu.org/licenses/gpl-3.0.en.html).
+
 # Special Thanks
 
 A huge shoutout to the AFQM Modding Community over on [Discord](https://discord.gg/afqm)
