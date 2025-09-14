@@ -1,0 +1,4 @@
+name = "QuickLoader"
+version = "0.1.0"
+author = "_opalescent"
+supported_game_versions = [ "1.2.2" ]
