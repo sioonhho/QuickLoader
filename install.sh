@@ -17,6 +17,6 @@ echo Copying QuickLoader to the mods directory ...
 cp -r $tmpdir/QuickLoader $modsdir/QuickLoader
 
 echo Copying wrapper script to the game directory ...
-cp $tmpdir/QuickLoader/QuickLoader.sh "$HOME/.steam/steam/steamapps/common/A Few Quick Matches/QuickLoader.sh"
+mv $modsdir/QuickLoader/QuickLoader.sh "$HOME/.steam/steam/steamapps/common/A Few Quick Matches/QuickLoader.sh"
 
 echo Installation complete!
