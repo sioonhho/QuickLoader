@@ -4,7 +4,7 @@ New-Item -ItemType Directory -Force $ModsDir | Out-Null
 if (Test-Path "$ModsDir\QuickLoader") {
     Write-Host "It looks like QuickLoader is already installed, if not please ensure there isn't a QuickLoader folder in $ModsDir"
 
-    Write-Host 'Press any key to exit ...'
+    Write-Host "`nPress any key to exit ..."
     [System.Console]::ReadKey($false)
 
     exit 1
@@ -35,5 +35,5 @@ Move-Item "$ModsDir\QuickLoader\QuickLoader.ps1" "C:\Program Files (x86)\Steam\s
 
 Write-Host 'Installation complete!'
 
-Write-Host 'Press any key to exit ...'
+Write-Host "`nPress any key to exit ..."
 [System.Console]::ReadKey($false)
