@@ -1,10 +1,10 @@
 modsdir="$HOME/.steam/steam/steamapps/compatdata/3805420/pfx/drive_c/users/steamuser/AppData/Local/StickZ_001/mods"
 mkdir -p $modsdir
 
-# if [ -d $modsdir/QuickLoader ]; then
-#     echo "It looks like QuickLoader is already installed, if not please ensure there isn't a QuickLoader folder in $modsdir"
-#     exit 1
-# fi
+if [ -d $modsdir/QuickLoader ]; then
+    echo "It looks like QuickLoader is already installed, if not please ensure there isn't a QuickLoader folder in $modsdir"
+    exit 1
+fi
 
 tmpdir="/tmp/$(uuidgen)"
 
@@ -17,6 +17,6 @@ echo Copying QuickLoader to the mods directory ...
 cp -r $tmpdir/QuickLoader $modsdir/QuickLoader
 
 echo Copying wrapper script to the game directory ...
-cp $tmpdir/QuickLoader/QuickLoader.sh "$HOME/.steam/steam/steamapps/common/A Few Quick Matches/QuickLoaderTmp.sh"
+cp $tmpdir/QuickLoader/QuickLoader.sh "$HOME/.steam/steam/steamapps/common/A Few Quick Matches/QuickLoader.sh"
 
 echo Installation complete!
