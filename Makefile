@@ -7,19 +7,19 @@ linux: build/QuickLoader-linux.zip
 
 windows: build/QuickLoader-windows.zip
 
-build/QuickLoader-linux.zip: $(scripts) $(references) QuickLoader.sh manifest.toml LICENSE build/linux
+build/QuickLoader-linux.zip: install.sh $(scripts) $(references) QuickLoader.sh manifest.toml LICENSE build/linux
 	mkdir -p QuickLoader
 	cp -r build/linux QuickLoader/cli
 	cp UndertaleModTool/LICENSE.txt QuickLoader/cli
-	cp -r scripts references QuickLoader.sh manifest.toml LICENSE QuickLoader
+	cp -r install.sh scripts references QuickLoader.sh manifest.toml LICENSE QuickLoader
 	zip -rq9 $@ QuickLoader
 	rm -rf QuickLoader
 
-build/QuickLoader-windows.zip: $(scripts) $(references) QuickLoader.ps1 manifest.toml LICENSE build/windows
+build/QuickLoader-windows.zip: install.bat $(scripts) $(references) QuickLoader.ps1 manifest.toml LICENSE build/windows
 	mkdir -p QuickLoader
 	cp -r build/windows QuickLoader/cli
 	cp UndertaleModTool/LICENSE.txt QuickLoader/cli
-	cp -r scripts references QuickLoader.ps1 manifest.toml LICENSE QuickLoader
+	cp -r install.bat scripts references QuickLoader.ps1 manifest.toml LICENSE QuickLoader
 	zip -rq9 $@ QuickLoader
 	rm -rf QuickLoader
 

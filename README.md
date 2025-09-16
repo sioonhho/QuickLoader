@@ -16,32 +16,11 @@ A collection of [UndertaleModTool](https://github.com/UnderminersTeam/UndertaleM
 
 # Installation
 
-(OLD) check below
 1. Download the [latest](https://github.com/sioo.nhho/QuickLoader/releases/latest) release for your platform (currently only Windows and Linux/Steam Deck are supported)
-2. Create a directory called `mods` in the game's save directory, this should be:
-    * On Windows: `%LocalAppData%\StickZ_001`
-    * On Linux/Steam Deck: `~/.steam/steam/steamapps/compatdata/3805420/pfx/drive_c/users/steamuser/AppData/Local/StickZ_001`
-3. Navigate to the `mods` directory you created, and unzip the file you downloaded
-    * At this point the folder structure should look like this:
-        ```
-        StickZ_001
-        |-- mods
-        |   `-- QuickLoader
-        |       `-- ...
-        `-- ...
-        ```
-4. Move the wrapper script from the `QuickLoader` folder into the game directory, this should be:
-    * On Windows (`QuickLoader.ps1`): `C:\Program Files (x86)\Steam\steamapps\common\A Few Quick Matches`
-    * On Linux/Steam Deck (`QuickLoader.sh`): `~/.steam/steam/steamapps/common/A Few Quick Matches`
-5. Set the game's launch options to the following depending on your platform:
-    * On Windows: `C:\Windows\System32\WindowsPowerShell\v1.0\powersell.exe -ExecutionPolicy Bypass .\QuickLoader.ps1 ""%command""`
+2. Run the install script by double clicking on `install.bat` if you're on Windows, and `install.sh` if you're on Linux/Steam Deck.
+3. Set the game's launch options to the following depending on your platform:
+    * On Windows: `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass .\QuickLoader.ps1 ""%command%""`
     * On Linux/Steam Deck: `./QuickLoader.sh %command%`
-
-Windows: Press Windows+R, paste the following code, and run: `powershell.exe "(curl 'https://raw.githubusercontent.com/sioonhho/QuickLoader/refs/heads/main/install.ps1').Content | iex"`
-
-Linux/Steam Deck: Run the following in a terminal: `wget -qO- https://raw.githubusercontent.com/sioonhho/QuickLoader/refs/heads/main/install.sh | sh`
-
-Then set your launch options like in the final step of the old installation instructions above.
 
 # Usage
 
