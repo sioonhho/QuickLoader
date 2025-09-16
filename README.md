@@ -16,6 +16,7 @@ A collection of [UndertaleModTool](https://github.com/UnderminersTeam/UndertaleM
 
 # Installation
 
+(OLD) check below
 1. Download the [latest](https://github.com/sioo.nhho/QuickLoader/releases/latest) release for your platform (currently only Windows and Linux/Steam Deck are supported)
 2. Create a directory called `mods` in the game's save directory, this should be:
     * On Windows: `%LocalAppData%\StickZ_001`
@@ -35,6 +36,12 @@ A collection of [UndertaleModTool](https://github.com/UnderminersTeam/UndertaleM
 5. Set the game's launch options to the following depending on your platform:
     * On Windows: `C:\Windows\System32\WindowsPowerShell\v1.0\powersell.exe -ExecutionPolicy Bypass .\QuickLoader.ps1 ""%command""`
     * On Linux/Steam Deck: `./QuickLoader.sh %command%`
+
+Windows: Press Windows+R, paste the following code, and run: `powershell.exe "(curl 'https://raw.githubusercontent.com/sioonhho/QuickLoader/refs/heads/main/install.ps1').Content | iex"`
+
+Linux/Steam Deck: Run the following in a terminal: `wget -qO- 'https://raw.githubusercontent.com/sioonhho/QuickLoader/refs/heads/main/install.sh' | bash`
+
+Then set your launch options like in the final step of the old installation instructions above.
 
 # Usage
 
