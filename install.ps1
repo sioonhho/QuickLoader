@@ -1,4 +1,4 @@
-﻿$ModsDir = "$env:LocalAppData\Stickz_001\mods"
+$ModsDir = "$env:LocalAppData\Stickz_001\mods"
 New-Item -ItemType Directory -Force $ModsDir | Out-Null
 
 if (Test-Path "$ModsDir\QuickLoader") {

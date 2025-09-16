@@ -39,7 +39,7 @@ A collection of [UndertaleModTool](https://github.com/UnderminersTeam/UndertaleM
 
 Windows: Press Windows+R, paste the following code, and run: `powershell.exe "(curl 'https://raw.githubusercontent.com/sioonhho/QuickLoader/refs/heads/main/install.ps1').Content | iex"`
 
-Linux/Steam Deck: Run the following in a terminal: `wget -qO- 'https://raw.githubusercontent.com/sioonhho/QuickLoader/refs/heads/main/install.sh' | bash`
+Linux/Steam Deck: Run the following in a terminal: `wget -qO- https://raw.githubusercontent.com/sioonhho/QuickLoader/refs/heads/main/install.sh | sh`
 
 Then set your launch options like in the final step of the old installation instructions above.
 
